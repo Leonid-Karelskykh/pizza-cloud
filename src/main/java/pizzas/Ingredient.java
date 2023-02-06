@@ -1,18 +1,24 @@
 package pizzas;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+
 @Data
+@Entity
+@AllArgsConstructor
+@NoArgsConstructor(access=AccessLevel.PRIVATE, force=true)
 public class Ingredient {
-	public String id;
+	
+	@Id
+	private String id;
 	public String name;
 	private Type type;
 	public enum Type {
 		BASE, CHEESE, MEET, VEGGIES;
-	}
-	public Ingredient(String id, String name, Type type) {
-		this.id = id;
-		this.name = name;
-		this.type = type;
 	}
 	public Type getType() {
 		return this.type;

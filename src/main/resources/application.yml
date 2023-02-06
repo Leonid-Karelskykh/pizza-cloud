@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    generate-unique-name: false
+    name: pizzacloud
+  
+  data:
+    rest:
+      base-path: /data-api
+      detection-strategy: annotated
+    
+      
+server:
+  port: 8443
+  ssl:
+    key-store: C:\Program Files\Java\jdk-17.0.2\bin\mykeys.jks
+    key-store-password: leonid2005
+    key-password: leonid2005

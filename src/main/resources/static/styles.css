@@ -1,0 +1,45 @@
+body{
+	display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column 
+}
+
+.ingredient-group{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column 
+}
+
+.finish{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.submit{
+	margin-top: 5px;
+	font-size: 14pt;
+}
+
+img{
+	width: 200px;
+	height: 200px;
+}
+
+h3{
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+.line{
+	width: 100%;
+	height: 1px;
+	border: 2px solid black;
+}
+.errorMessage{
+	color: red;
+}
